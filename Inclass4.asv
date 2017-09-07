@@ -6,22 +6,14 @@
 filename = 'randomNumbers.txt';
 fid = fopen(filename,'w');
 fprintf(fid,'Random Numbers 1 \n');
-ii = 1;
-while ii <10
+ii = 1
+while ii <13
    ii = ii+1;
    rand_Num = rand(1,13);
    str2prnt = num2str(rand_Num);
    fprintf(fid,'%s\n',str2prnt);
 end
 fprintf(fid,'Random Numbers 2 \n');
-
-ii = 1;
-while ii <9
-   ii = ii+1;
-   rand_Num = rand(1,7);
-   str2prnt = num2str(rand_Num);
-   fprintf(fid,'%s\n',str2prnt);
-end
 %%
 %(b) Write code that reads only the first line of random numbers in the file and stores
 %them as numbers in an array. 
