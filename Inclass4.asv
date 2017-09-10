@@ -43,12 +43,16 @@ cellarr %prints cell array to compare to line1 above
 % 2. Write a function that takes an array as input and returns a logical
 % variable which is true if the sum of the numbers in the array is greater
 % than or equal to 10 and false if it is less than 10. 
+clear all
 
-function [mean,stdev] = stat(x) %STAT Interesting statistics.
-            n = length(x);
-            mean = sum(x) / n;
-            stdev = sqrt(sum((x - mean).^2)/n);
+y = [1,2,3,4,5]
+sumcheck(y)
+
+function [suum] = sumcheck(x)
+        k = sum(x)
+        if k >= 10
+            suum = true
+        else 
+            suum = false
+        end
 end
-
-
-function (x,y) = 
